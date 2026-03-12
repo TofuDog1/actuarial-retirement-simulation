@@ -49,7 +49,7 @@ def run_simulation():
         
         rows.append({
             "final_savings": int(savings),
-            "death_age": age,
+            "death_age": death_age,
             "ruined": ruined,
             "ruin_age": ruin_age
         })
