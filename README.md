@@ -78,7 +78,7 @@ Sample annual mortality probability\
       ↓\
 Determine simulated age at death\
       ↓\
-Simulate portfolio until death or ruin\
+Simulate portfolio until death or ruin
 
 
 The mortality data is stored in:\
@@ -123,7 +123,7 @@ retirement_simulator/\
 │   └── life_table.csv\
 ├── outputs/\
 ├── .gitignore\
-└── README.md\
+└── README.md
 
 ## Installation
 
@@ -142,7 +142,7 @@ The program will prompt for:
 Starting savings:\
 Yearly withdrawal:\
 Retirement age:\
-Stock percentage of portfolio:\
+Stock percentage of portfolio:
 
 After the simulation finishes, summary statistics will be printed to the terminal and graphs will be saved to outputs/.
 
@@ -153,7 +153,7 @@ A simulation might be configured with:
 Starting savings: 1000000\
 Yearly withdrawal: 40000\
 Retirement age: 65\
-Stock percentage of portfolio: 60\
+Stock percentage of portfolio: 60
 
 The simulator then generates 100,000 possible retirement paths using the specified assumptions.
 
@@ -173,7 +173,7 @@ Variable spending strategies\
 Healthcare expenses\
 Housing costs\
 Government policy changes\
-Sequence-of-returns effects beyond the modeled stochastic returns\
+Sequence-of-returns effects beyond the modeled stochastic returns
 
 The results are therefore dependent on the assumptions and distributions used by the model.
 
