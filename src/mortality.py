@@ -3,7 +3,7 @@ import pandas
 from config import life_table_path
 
 life_table_df = pandas.read_csv(life_table_path, index_col=0)
-qx = life_table_df['qx'].array
+qx = life_table_df['qx'].to_numpy()
 
 def sample_death_age(start_age):
     age = start_age

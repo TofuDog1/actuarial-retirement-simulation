@@ -136,9 +136,20 @@ ENV/
 env.bak/
 venv.bak/
 
+# Generated simulation outputs
+outputs/*.png
+
 # Spyder project settings
 .spyderproject
 .spyproject
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Rope project settings
 .ropeproject
