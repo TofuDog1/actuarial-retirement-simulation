@@ -72,58 +72,58 @@ The simulation uses age-specific mortality probabilities (`qx`) from a Canadian 
 
 For each simulated retirement:
 
-Retirement age
-      ↓
-Sample annual mortality probability
-      ↓
-Determine simulated age at death
-      ↓
-Simulate portfolio until death or ruin
+Retirement age\
+      ↓\
+Sample annual mortality probability\
+      ↓\
+Determine simulated age at death\
+      ↓\
+Simulate portfolio until death or ruin\
 
 
-The mortality data is stored in:
+The mortality data is stored in:\
 data/life_table.csv
 
 ## Outputs
 
 The simulation generates several graphs in the outputs/ directory:
 
-life_expectancy_distribution.png
+life_expectancy_distribution.png\
 Distribution of simulated ages at death
 
-ruin_age_distribution.png
+ruin_age_distribution.png\
 Ages at which portfolios are depleted
 
-cumulative_ruin_chance.png
+cumulative_ruin_chance.png\
 Cumulative probability of portfolio ruin over retirement
 
-money_distribution.png
+money_distribution.png\
 Distribution of ending wealth among non-ruined simulations
 
-wealth_paths.png
+wealth_paths.png\
 Wealth percentiles over time
 
-wealth_cone.png
+wealth_cone.png\
 Fan chart showing the distribution of simulated wealth
 
-individual_wealth_paths.png
+individual_wealth_paths.png\
 Individual simulated wealth trajectories
 
 ## Project Structure
-retirement_simulator/
-├── src/
-│   ├── main.py
-│   ├── simulation.py
-│   ├── portfolio.py
-│   ├── mortality.py
-│   ├── graphs.py
-│   ├── config.py
-│   └── utils.py
-├── data/
-│   └── life_table.csv
-├── outputs/
-├── .gitignore
-└── README.md
+retirement_simulator/\
+├── src/\
+│   ├── main.py\
+│   ├── simulation.py\
+│   ├── portfolio.py\
+│   ├── mortality.py\
+│   ├── graphs.py\
+│   ├── config.py\
+│   └── utils.py\
+├── data/\
+│   └── life_table.csv\
+├── outputs/\
+├── .gitignore\
+└── README.md\
 
 ## Installation
 
@@ -139,10 +139,10 @@ python src/main.py
 
 The program will prompt for:
 
-Starting savings:
-Yearly withdrawal:
-Retirement age:
-Stock percentage of portfolio:
+Starting savings:\
+Yearly withdrawal:\
+Retirement age:\
+Stock percentage of portfolio:\
 
 After the simulation finishes, summary statistics will be printed to the terminal and graphs will be saved to outputs/.
 
@@ -150,10 +150,10 @@ After the simulation finishes, summary statistics will be printed to the termina
 
 A simulation might be configured with:
 
-Starting savings: 1000000
-Yearly withdrawal: 40000
-Retirement age: 65
-Stock percentage of portfolio: 60
+Starting savings: 1000000\
+Yearly withdrawal: 40000\
+Retirement age: 65\
+Stock percentage of portfolio: 60\
 
 The simulator then generates 100,000 possible retirement paths using the specified assumptions.
 
@@ -163,29 +163,29 @@ This simulation is intended as a modeling and educational project rather than fi
 
 The current model does not account for several factors that can materially affect retirement outcomes, including:
 
-Taxes
-CPP and OAS
-Investment fees
-Individual security selection
-Stock/bond return correlation
-Changes in asset allocation over time
-Variable spending strategies
-Healthcare expenses
-Housing costs
-Government policy changes
-Sequence-of-returns effects beyond the modeled stochastic returns
+Taxes\
+CPP and OAS\
+Investment fees\
+Individual security selection\
+Stock/bond return correlation\
+Changes in asset allocation over time\
+Variable spending strategies\
+Healthcare expenses\
+Housing costs\
+Government policy changes\
+Sequence-of-returns effects beyond the modeled stochastic returns\
 
 The results are therefore dependent on the assumptions and distributions used by the model.
 
 ## Data Sources
 
-Mortality
+Mortality\
 Statistics Canada mortality/life table data.
 
-Expected Returns
+Expected Returns\
 FP Canada, 2025 Projection Assumption Guidelines.
 
-Volatility
+Volatility\
 CIBC, Long-Term Annualized Capital Market Report, 2025.
 
 ## Disclaimer
